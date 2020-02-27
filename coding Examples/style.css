@@ -1,0 +1,32 @@
+.section {
+font-family:Arial, sans-serif;;
+width:25%;
+margin:4% 2%;
+display: inline-block;
+vertical-align: top;
+}
+
+/*.section h1{
+font-size:0.875em;
+line-height: 1.5em;
+/*letter-spacing:0.2em;*/
+}*/
+
+/*.section hr {
+	width:100%;
+	border-top:0.05em solid #231F20;
+}*/
+
+.section p {
+font-size:0.875em;
+line-height: 1.5em;
+/*letter-spacing:0.2em;*/
+}
+
+.section a {
+	color:#231F20;
+}
+
+
+
+ }

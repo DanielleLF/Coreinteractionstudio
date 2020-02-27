@@ -1,5 +1,5 @@
 body, html {
-	font-family:'Helvetica Neue', sans-serif;
+	font-family:'Spartan', sans-serif;
 	top:0;
 	left:0;
 	margin:0;
@@ -15,9 +15,10 @@ body, html {
 
 }
 
+ 
+
 
 h1{ 
-
 
 }
 
@@ -29,8 +30,8 @@ h1{
 	display:inline-flex;
 	align-items:center;
 	justify-content:center;
- 	background-color: gray;
- 	color:white;
+ 	background-color:#45BDA3 ;
+ 	color:#99658C;
  	border: 0.05em solid black;
  	transition: 0.5s ease-in-out;
  	
@@ -40,8 +41,8 @@ a{
 text-decoration: none; }
 
 .section:hover {
-color:red;
-background-color: white;
+color:white;
+background-color:#28B2C7 ;
 }
 
 .section a {
