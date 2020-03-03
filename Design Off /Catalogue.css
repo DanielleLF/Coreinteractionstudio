@@ -1,0 +1,209 @@
+	body {
+		margin:0;
+		padding:0;
+		top:0;
+		left:0;
+		width:100%;
+		font-family:Helvetica-Neue, sans-serif;
+		font-weight:200;
+	}
+	/*search box*/
+	#search form {
+		padding:1%;
+		background-color:white;
+		width:80%;
+		margin: 5% 10% 2% 8%;
+		border:0.05em solid #1d1d1d;
+		border-radius:0.2em;
+		transition:0.5s ease-in-out;
+	}
+	#search_input {
+		font-family:Open Sans;
+		font-weight:400;
+		font-size:1em;
+		width:80%;
+		background-color:transparent;
+		margin-top:0%;
+	}
+	#search button {
+		padding:0%;
+		float:right;
+		height:100%;
+		margin-top:0%;
+		font-size:2em;
+		background-color:transparent;
+	}
+	#search_submit {
+		border:none;
+	}
+	#search_submit i{
+		font-size:1.5em;
+		color:#CCCCCC;
+	}
+	input {
+		width:80%;
+		margin-top:2%;
+		padding:2%;
+		background-color:#f2f2f2;
+		border: 1em solid #1d1d1d
+	    border-radius: 1em; 
+	    border-style:none;
+	}
+	input:focus {
+		outline:none;
+	}
+	#gallery {
+		width:90%;
+		margin: 0 auto;
+		animation: fadeIn 0.1s ease-in-out;
+	}
+	.card {
+		display:inline-block;
+		text-align:center;
+		background-color:white;
+		box-shadow:0em 0em 0.3em #CCCCCC;
+		border-radius:0.2em;
+		width:24%;
+		padding:10% 2%;
+		margin:2.5%;
+		height:15vh;
+		vertical-align:top;
+		cursor:pointer;
+		/*add animation*/
+		animation: fadeIn 0.5s ease-in-out;
+	}
+	.event {
+		font-size:2em;
+		font-weight:900;
+		letter-spacing:-0.02em;
+	}
+	.buttonholder {
+		position:fixed;
+		bottom:0;
+		width: 98%;
+	    text-align: center;
+	    background-color: white;
+	    padding: 2%;
+	    animation: fadeIn 0.5s ease-in-out;
+	    box-shadow:0em -0.05em .8em #CCCCCC;
+	}
+	.button {
+		width: 94%;
+	    text-align: center;
+	    background-color: #F2F2F2;
+	    padding: 2%;
+	    border-radius: 0.2em;
+	    font-weight: 200;
+	    font-size: 1em;
+	    cursor:pointer;
+	}
+	.button:hover {
+		background-color:#CCCCCC;
+		cursor:pointer;
+	}
+	.notification {
+		top:0;
+		left:0;
+		position:fixed;
+		width: 100%;
+		height:100vh;
+		background-color:white;
+		display:flex;
+		align-items:center;
+		justify-content: center;
+		z-index:10;
+	}
+	.aligner {
+		max-width:50%;
+		text-align:center;
+	}
+	.aligner svg {
+		margin:auto;
+	}
+	.notification p {
+
+	}
+	/*CSS animations*/
+
+	@keyframes fadeIn {
+		0% {
+			opacity:0;
+
+		}
+		100% {
+			opacity:1;
+		}
+	}
+
+	.checkmark {
+	  width: 56px;
+	  height: 56px;
+	  border-radius: 50%;
+	  display: block;
+	  stroke-width: 2;
+	  stroke: #fff;
+	  stroke-miterlimit: 10;
+	  box-shadow: inset 0px 0px 0px #7ac142;
+	  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+	}
+
+	.checkmark__circle {
+	  stroke-dasharray: 166;
+	  stroke-dashoffset: 166;
+	  stroke-width: 2;
+	  stroke-miterlimit: 10;
+	  stroke: #7ac142;
+	  fill: none;
+	  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+	}
+
+	.checkmark__check {
+	  transform-origin: 50% 50%;
+	  stroke-dasharray: 48;
+	  stroke-dashoffset: 48;
+	  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+	}
+
+	@keyframes stroke {
+	  100% {
+	    stroke-dashoffset: 0;
+	  }
+	}
+	@keyframes scale {
+	  0%, 100% {
+	    transform: none;
+	  }
+	  50% {
+	    transform: scale3d(1.1, 1.1, 1);
+	  }
+	}
+	@keyframes fill {
+	  100% {
+	    box-shadow: inset 0px 0px 0px 30px #7ac142;
+	  }
+	}
+
+	/*Responsive*/
+	@media screen and (max-width:767px){
+		.card {
+			width:90%;
+			display:block;
+		}
+		.event {
+			padding-top:5%;
+		}
+		.buttonholder {
+			padding:5%;
+			width:100%;
+		}
+		.button {
+			padding:5%;
+			width:80%;
+		}
+		#search {
+			padding:5% 0% 5% 0%;
+		}
+		#search_submit i{
+			font-size:1em;
+		}
+	}
