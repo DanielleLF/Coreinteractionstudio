@@ -1,0 +1,151 @@
+
+body {
+	font-family:Interstate,Bold;
+  overflow-x: hidden;
+}
+
+
+.star-grid {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows:min-content;
+  grid-gap:2rem;
+}
+
+.g-star-1 {
+  grid-column:1;
+  grid-row:2;
+}
+
+.g-star-2 {
+  grid-column:2;
+  grid-row:2;
+}
+
+.g-star-3 {
+  grid-column:3;
+  grid-row:2;
+}
+
+.star4 {
+  margin-left:80px;
+  width:300px;
+  height:300px;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.g-star-5 {
+  grid-column:2;
+  grid-row:3;
+}
+
+
+.title_nav-wrapper { 
+    grid-column: 1 / 4;
+    grid-row:1;
+    height:200px;
+}
+
+.title_nav { 
+    position:fixed;
+    height: 180px;
+    width:100%;
+    background-color: #1F2B5F;
+    font-family:Interstate, Bold;
+    color:white;
+    padding:20px;
+    z-index:1;
+    top:0px;
+    left:0px;
+}
+
+h1 {
+    font-size: 120px;
+    position: absolute;
+    top: -60px;
+    left: 51px;
+    letter-spacing: -20px;
+    color: #E31A38;
+}
+
+h2{ 
+  margin-top:0px;
+  font-size: 30px;
+  margin-left:23px;
+ }
+
+ h3 {
+top: 129px;
+font-size: 30px;
+left: 74px;
+position: absolute; }
+
+h4 { 
+font-family:Interstate, Bold;
+color:#1F2B5F;
+font-size:30px;
+text-align: center;
+ }
+
+.star {
+background-color: white;
+top: 20px;
+left: 94px;
+position: relative;
+width: 25px;
+height: 25px;
+z-index: 1;
+clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.star1 {
+  margin-left:80px;
+  margin-top:100px;
+  width:300px;
+  height:300px;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.star2 {
+  margin-top:100px;
+  margin-left: 90px;
+  width:300px;
+  height:300px;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.star3 {
+  margin-left:85PX;
+  margin-top:100px;
+  width:300px;
+  height:300px;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.star4 {
+  margin-left:80px;
+  width:300px;
+  height:300px;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.star5 {
+  margin-left: 90px;
+  width:300px;
+  height:300px;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+
+img { 
+/*width:100px;*/
+height:100%;
+position:relative;
+top:-10px;
+ }
+
+
+h4:hover {
+  color:#E31A38;
+}
+
