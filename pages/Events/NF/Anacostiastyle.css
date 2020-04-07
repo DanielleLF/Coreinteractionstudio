@@ -4,6 +4,60 @@ body{
   overflow-x: hidden;
   }
   
+  .search-box {
+
+position: absolute;
+ top:70%;
+ left:79%;
+ transform:translate(-50%;-50%);
+ background:#1F2B5F;
+ /*width:250px;
+ height:20%;*/
+ /*height:40px;*/
+ border-radius:0px;
+ padding:5px;
+}
+
+.search-box:hover > .search-txt{
+width:200px;
+padding:0 4px;
+}
+
+
+/*.search-box:hover > .search-btn{
+background:blue;
+}*/
+
+
+.search-btn {
+  
+  scale:180%;
+  color: white;
+  float:right;
+  width:35px;
+  height:35px;
+  /*border-radius:50%;*/
+  /*background:pink;*/
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition:0.4s;
+}
+
+.search-txt {
+
+border:none;
+background: white;
+outline:none;
+float:right;
+padding:0;
+color:grey;
+font-size:16px;
+transition:0.4s;
+line-height:35px;
+width:0px;
+}
+
 .star-grid {
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;

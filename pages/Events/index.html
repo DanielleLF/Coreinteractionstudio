@@ -3,9 +3,13 @@
 <head>
 	<title>Events In Washington DC</title>
 	<link href="style.css" rel="stylesheet" type="text/css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"> </script>
+
 
 </head>
 <body>
+
+
 <section class="star-grid">
 
 <div class="title_nav-wrapper">
@@ -14,9 +18,22 @@
 		<div class="star"></div>
 		<h1>DC</h1> 
 		<h3>Events</h3>
+
+
+<div class="search-box">
+	
+	 <input class="search-txt" type="text" name="" placeholder="Type to search"> 
+	<a class="search-btn" href="#">
+<i class="fas fa-search"></i> 
+	</a>
 	</div>
 </div>
+</div>
 
+
+
+
+<!-- stars -->
 
 <div class="g-star-1">
 <div class="star1"><img src="images/bw_Cherrytree.jpg"></div>
@@ -50,33 +67,63 @@
 </div>
 
 
+
+
 </section>
 
-<!--<div>      
-<div class="star1"><img src="images/bw_Cherrytree.jpg"></div>
-<h4> National Festival </h4>
 
-</div>
 
-<div class="star2">      
-<img src="images/bw_Art.jpg">
-</div>
+<script> 
 
-<div class="star3">      
-<img src="images/bw_PA.jpg">
-</div>
+	// functions to search and update data
+function listenSearch(data) {
+	search.onchange=function() {
+		// console.log(data)
+		searchterms = document.querySelector('#search_input').value
+		searchterms = searchterms.toLowerCase();
+		searchterms = searchterms.split(',')
+		// console.log(searchterms)
+		updateData(searchterms, data)
+		document.body.style.zoom = 1.0;
+	}
+	 search.addEventListener("keyup", function(event) {
+      event.preventDefault();
+      if (event.keyCode === 13) {
+      	updateData(searchterms, data)
+      	document.body.style.zoom = 1.0;
+      }
+    });
 
-<div class="star4">      
-<img src="images/bw_DN.jpg">
-</div>
+}
 
-<div class="star5">      
-<img src="images/bw_mos.png">
-</div>
+function updateData(searchterms, data){
+	updatedData= []
+	for(i=0;i<searchterms.length;i++){
+		results1 = data.filter(function(d){
+		// filter by the different fields I want (name, brand, type)
+			return d.name.toLowerCase().includes(searchterms[i])
+		})
 
-<div class="star6">      
-<img src="images/bw_MU.jpg">
-</div>-->
+		results2 = data.filter(function(d){
+			return d.brand.toLowerCase().includes(searchterms[i])
+		})
+		results3= results1.concat(results2)
+
+		results4 = data.filter(function(d){
+			return d.type.toLowerCase().includes(searchterms[i])
+		})
+		results5 = results3.concat(results4)
+		// get only the unique results
+		results5 = results5.filter(onlyUnique);
+		updatedData.push(results5)
+	}
+	console.log(updatedData)
+	clear('main')
+	viewData(updatedData[0], 'main')
+}
+
+</script>
+
 
 
 </body>

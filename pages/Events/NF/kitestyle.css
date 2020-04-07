@@ -1,8 +1,62 @@
 body{
-  height: 180%;
+  height: 160%;
   width: 100%;
   overflow-x: hidden;
   }
+  
+.search-box {
+
+position: absolute;
+ top:70%;
+ left:79%;
+ transform:translate(-50%;-50%);
+ background:#1F2B5F;
+ /*width:250px;
+ height:20%;*/
+ /*height:40px;*/
+ border-radius:0px;
+ padding:5px;
+}
+
+.search-box:hover > .search-txt{
+width:200px;
+padding:0 4px;
+}
+
+
+/*.search-box:hover > .search-btn{
+background:blue;
+}*/
+
+
+.search-btn {
+  
+  scale:180%;
+  color: white;
+  float:right;
+  width:35px;
+  height:35px;
+  /*border-radius:50%;*/
+  /*background:pink;*/
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition:0.4s;
+}
+
+.search-txt {
+
+border:none;
+background: white;
+outline:none;
+float:right;
+padding:0;
+color:grey;
+font-size:16px;
+transition:0.4s;
+line-height:35px;
+width:0px;
+}
   
 .star-grid {
   display:grid;
@@ -13,7 +67,7 @@ body{
 
 .backimage:after {
   content: "";
-  background: url(https://washington-org.s3.amazonaws.com/s3fs-public/ncbf-pink-tie-party_credit-jason-dixson-photography-for-ncbf.jpg);
+  background: url(https://www.washingtonian.com/wp-content/uploads/2019/05/3.30.2019-Kite-Festival-2064-1.jpg);
   opacity: 0.3;
   top: 0;
   left: -100px;
@@ -21,7 +75,7 @@ body{
   right: 0;
   position: absolute;
   z-index: -1;   
-  height:180%;
+  height:160%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -87,7 +141,7 @@ position: absolute;
 
 h1 {
 margin-top: 100px;
-font-size: 5em;
+font-size: 4em;
 color:#1F2B5F;
 font-family: "Interstate";
 }

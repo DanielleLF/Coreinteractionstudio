@@ -7,7 +7,6 @@ body{
 
 
 .title_nav { 
-
     width:100%;
     height: 23%;
     position:fixed;
@@ -45,7 +44,7 @@ position: absolute;
 
 .backimage:after {
   content: "";
-  background: url(http://www.stellajonesgallery.com/file/ece04fc4-8c38-4350-a5e4-7f2cb36f8d0e);
+  background: url(https://nmwa.org/sites/default/files/styles/detail-a/public/media/images/exhibition/new_beginnings_1_-_e_0.jpg?itok=cMZ9poDX);
   opacity: 0.3;
   top: 0;
   left: -100px;
@@ -149,7 +148,7 @@ label {
   position:absolute;
    padding: 15px;
    margin-left:35px;
-   margin-top:30px;
+   margin-top:20px;
   border-radius: 0px;
   cursor: pointer;
   font-family:Interstate;
