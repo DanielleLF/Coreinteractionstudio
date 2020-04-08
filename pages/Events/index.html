@@ -31,41 +31,47 @@
 </div>
 
 
-
-
 <!-- stars -->
-
 <div class="g-star-1">
-<div class="star1"><img src="images/bw_Cherrytree.jpg"></div>
-<h4> <a href="NF/NAindex.html" style="text-decoration: none; color:#1F2B5F;" >National Festival</a></h4>
+<a href="NF/NAindex.html" style="text-decoration: none; color:#1F2B5F;" >
+<div class="star1">
+	<!-- <img src="images/bw_Cherrytree.jpg" class="img-front"> -->
+	<img src="https://cdn.cherryblossomwatch.com/wp-content/uploads/2019/04/cherry-blossoms-washington-dc-april-01-2019-418x-1068x713.jpg">
+</div>
+<h4> National Festival</h4>
+</a>
 </div>
 
 <div class="g-star-2">
-<div class="star2"><img src="images/bw_Art.jpg">
+<a href="Art/Artindex.html" style="text-decoration: none; color:#1F2B5F;" >
+<div class="star2"><img src="https://hdfreefoto.files.wordpress.com/2014/09/paints-and-brushes.jpg">
 </div>
-<h4> <a href="Art/Artindex.html" style="text-decoration: none; color:#1F2B5F;" >Art</a> </h4>
+<h4> Art </h4></a>
 </div>
 
 <div class="g-star-3">
-<div class="star3"><img src="images/bw_PA.jpg"></div>
-<h4> <a href="PA/PAindex.html" style="text-decoration: none; color:#1F2B5F;" >Performing Arts</a> </h4>
+	<a href="PA/PAindex.html" style="text-decoration: none; color:#1F2B5F;" >
+<div class="star3"><img src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/TAKEMWXEQMI6TJXIQ5M4LR7WBA.jpg&w=1440"></div>
+<h4>Performing Arts </h4> </a>
 </div>
 
 <div class="g-star-4">
-<div class="star4"><img src="images/bw_DN.jpg"></div>
-<h4> <a href="DN/DNindex.html" style="text-decoration: none; color:#1F2B5F;" >Date Night</a> </h4>
+<a href="DN/DNindex.html" style="text-decoration: none; color:#1F2B5F;" >
+<div class="star4"><img src="https://www.goingwithmygut.com/wp-content/uploads/2019/05/images1569-5cc9446158072-1024x684.jpg"></div>
+<h4>Date Night</h4></a> 
 </div>
 
 <div class="g-star-5">
-<div class="star5"><img src="images/bw_mos.png"></div>
-<h4> <a href="MO/MOindex.html" style="text-decoration: none; color:#1F2B5F;" >Monuments</a></h4>
+<a href="MO/MOindex.html" style="text-decoration: none; color:#1F2B5F;" >
+<div class="star5"><img src="https://cdn.cnn.com/cnnnext/dam/assets/190918105506-01-washington-monument-file.jpg"></div>
+<h4> Monuments</h4> </a>
 </div>
 
 <div class="g-star-6">
-<div class="star6"><img src="images/bw_MU.jpg"></div>
-<h4> <a href="MU/MUindex.html" style="text-decoration: none; color:#1F2B5F;" >Museums</a></h4>
+<a href="MU/MUindex.html" style="text-decoration: none; color:#1F2B5F;" >
+<div class="star6"><img src="https://www.glenstone.org/wp-content/uploads/prod/2018/06/Glenstone-Water-Court-2171.jpg"></div>
+<h4> Museums</h4> </a>
 </div>
-
 
 
 
@@ -75,52 +81,22 @@
 
 <script> 
 
-	// functions to search and update data
-function listenSearch(data) {
-	search.onchange=function() {
-		// console.log(data)
-		searchterms = document.querySelector('#search_input').value
-		searchterms = searchterms.toLowerCase();
-		searchterms = searchterms.split(',')
-		// console.log(searchterms)
-		updateData(searchterms, data)
-		document.body.style.zoom = 1.0;
-	}
-	 search.addEventListener("keyup", function(event) {
-      event.preventDefault();
-      if (event.keyCode === 13) {
-      	updateData(searchterms, data)
-      	document.body.style.zoom = 1.0;
-      }
-    });
-
-}
-
-function updateData(searchterms, data){
-	updatedData= []
-	for(i=0;i<searchterms.length;i++){
-		results1 = data.filter(function(d){
-		// filter by the different fields I want (name, brand, type)
-			return d.name.toLowerCase().includes(searchterms[i])
-		})
-
-		results2 = data.filter(function(d){
-			return d.brand.toLowerCase().includes(searchterms[i])
-		})
-		results3= results1.concat(results2)
-
-		results4 = data.filter(function(d){
-			return d.type.toLowerCase().includes(searchterms[i])
-		})
-		results5 = results3.concat(results4)
-		// get only the unique results
-		results5 = results5.filter(onlyUnique);
-		updatedData.push(results5)
-	}
-	console.log(updatedData)
-	clear('main')
-	viewData(updatedData[0], 'main')
-}
+// function myFunction() {
+//     var input, i, h4 ,txtValue;
+//     input = document.getElementById("search-txt");
+//     filter = input.value.toUpperCase();
+//     tc= document.getElementById ("tc"); 
+//     h4 = document.getElementById("Type");
+//     for (i = 0; i < h4.length; i++) {
+//         a = h4[i].getElementsByTagName("h4")[0];
+//         txtValue = a.textContent || a.innerText;
+//         if (txtValue.toUpperCase().indexOf(filter) > -1) {
+//             h4[i].style.display = "";
+//         } else {
+//             h4[i].style.display = "none";
+//         }
+//     }
+// }
 
 </script>
 
