@@ -71,10 +71,10 @@ h3 {
 		/*transition:0.25s ease-in-out;*/
 }
 
-/*a {
+a {
 	background-color:transparent;
 	padding:2%;
-	border:0.5em solid #FFE9AD;
+	border:0.5em solid #A88E45;
 	text-decoration: none;
 	color:white;
 	transition:0.25s ease-in-out;
@@ -83,7 +83,7 @@ h3 {
 	}
 
 a:hover {
-		background-color:#FFE9AD;
-		color:#008cff;
-}*/
+		background-color:#A88E45;
+		color:white;
+}
 
