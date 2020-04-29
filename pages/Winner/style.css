@@ -101,7 +101,7 @@ ul {
   overflow-y: hidden;
   }
 
-/*#Tickets{
+#Tickets{
 	border: solid #A88E45 0.25px;
 	height: 20px;
 	width:70px;
@@ -126,7 +126,7 @@ p{
 	font-size: 12px;
 	text-transform: capitalize;
 	color: white;
-	/*border: solid #A88E45 0.25px*/;
+	/*border: solid #A88E45 0.25px;
 /*}
 #Parasite img{
 	width:100px !important;
@@ -164,7 +164,7 @@ p{
 	border-color: #A88E45;
 	border-width: 0.25px;
 }
-*/
+
 @media screen and (max-width:1200px){
 
 
