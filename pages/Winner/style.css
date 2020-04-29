@@ -1,6 +1,7 @@
 body{background-color:#2B2B2B;
 margin: 25px;
-overflow-x: hidden;}
+overflow: hidden;}
+
 h1{ 
 	color: #A88E45;
 	font-family: 'Helvetica Neue', bold;
@@ -32,10 +33,10 @@ img{ width: 100px ;
 	border-width: 0.25px;
 }
 
-.top-nav {
+/*.top-nav {
   display: grid;
   grid-template-columns: 1fr;
-}
+}*/
 
 .search-txt {
 	border: solid #A88E45 0.25px;
@@ -45,26 +46,25 @@ img{ width: 100px ;
 	opacity: 0.2;
 	position: relative;
 	top: -87px;
-	left: 170px;
+	left: 180px;
 } 
 
 .search-btn {
 	color: #A88E45;
 	position: relative;
 	top: -85px;
-	left: 20px;
+	/*left: 20px;*/
 }
 
 .notefications {
 	color: #A88E45;
 	position: relative;
 	top: -109px;
-	left: 145px;
+	left: 130px;
 }
 
 button{
-	border: none;
-	
+	border: none;	
 }
 
 .bestpicture {
@@ -168,7 +168,7 @@ p{
 @media screen and (max-width:1200px){
 
 
-	/*.top-nav {
+	/*.bestpicture {
 		width:100%;
 	}*/
 
