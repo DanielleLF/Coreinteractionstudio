@@ -1,6 +1,6 @@
 body{background-color:#2B2B2B;
 margin: 25px;
-overflow: hidden;}
+/*overflow: hidden;*/}
 
 h1{ 
 	color: #A88E45;
@@ -82,11 +82,11 @@ button{
 .bestpicture > .full {
   grid-column: 1 / -1;
 }
-
+/*
 ul {
   list-style: none;
   padding: 0;
-}
+}*/
 
 .hs {
   display: grid;
@@ -101,7 +101,7 @@ ul {
   overflow-y: hidden;
   }
 
-#Tickets{
+/*#Tickets{
 	border: solid #A88E45 0.25px;
 	height: 20px;
 	width:70px;
@@ -115,8 +115,8 @@ ul {
 	top: -15px;
 
 
-}
-#Tickets:hover{
+}*/
+/*#Tickets:hover{
 	background-color: #A88E45;
 	color: white;
 	opacity: 87%;
@@ -126,12 +126,12 @@ p{
 	font-size: 12px;
 	text-transform: capitalize;
 	color: white;
-	/*border: solid #A88E45 0.25px;
-/*}
+	border: solid #A88E45 0.25px;
+}
 #Parasite img{
 	width:100px !important;
 	height:300px !important;
-}*/
+}
 .flip-card{
 	background-color:transparent;
 	width: 90px;
@@ -163,14 +163,14 @@ p{
 	border: solid;
 	border-color: #A88E45;
 	border-width: 0.25px;
-}
+}*/
 
-@media screen and (max-width:1200px){
+/*@media screen and (max-width:1200px){
 
 
-	/*.bestpicture {
+	.bestpicture {
 		width:100%;
-	}*/
+	}
 
 @media screen and (min-width:736px){
 
