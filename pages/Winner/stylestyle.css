@@ -87,7 +87,7 @@ input {
 button:hover{ 
 	background-color: #A88E45;
 	color:white;
-	transition: 5s ease-in-out;
+	transition: ease-in-out;
 
  }
 
