@@ -1,36 +1,39 @@
 body{background-color:#2B2B2B;
-margin: 25px;
 /*overflow: hidden;*/}
 
-h1{ 
+.logo{ 
 	color: #A88E45;
 	font-family: 'Helvetica Neue', bold;
 	font-size: 70px;
-
+	margin: 18px;
 }
 h2{
 	font-family: 'Helvetica Neue', bold;
 	font-size: 20px;
 	text-transform: uppercase;
 	color: white;
+	margin: 25px;
 }
 h3{
 	font-family: 'Helvetica Neue', bold;
 	font-size: 15px;
 	text-transform: uppercase;
 	color: white;
+	margin: 25px;
 }
 h4{
 	font-family: 'Helvetica Neue', bold;
 	font-size: 10px;
 	text-transform: uppercase;
 	color: white;
+	margin: 25px;
 }
-img{ /*width: 300px ;
-	height: 350px;*/
+img{ width: 300px ;
+	height: 350px;
+	margin-left:15px;
 	border-color: #A88E45;
 	border-style: solid;
-	border-width: 0.25px;
+	border-width: 0.5px;
 
 }
 
@@ -39,59 +42,62 @@ img{ /*width: 300px ;
   grid-template-columns: 1fr;
 }*/
 
-.search-txt {
-	border: solid #A88E45 0.25px;
+input {
+	border: solid #A88E45 1.5px;
 	height: 25px;
 	width: 150px;
 	border-radius: 25px;
 	opacity: 0.2;
 	position: relative;
-	top: -87px;
-	left: 180px;
+	margin-left: 200px;
+	top: -56px;
 } 
 
 .search-btn {
 	color: #A88E45;
-	position: relative;
-	top: -85px;
-	/*left: 20px;*/
+	position: absolute;
+	top: 70px;
+	left: 184px;
 }
 
 .notefications {
 	color: #A88E45;
-	position: relative;
-	top: -109px;
-	left: 130px;
+	position: absolute;
+	top: 70px;
+	left: 150px;
 }
 
 .Tickets{
-	border: solid #A88E45 0.25px;
-	height: 20px;
-	width:70px;
+
+	border: solid #A88E45 1px;
+	height: 27px;
+	width:90px;
 	border-radius: 25px;
 	background-color: white;
-	font-family:'Helvetica Neue';
+	font-family:'Helvetica Neue', bold;
 	color: #A88E45;
 	font-size:10px;
 	position: relative;
-	left: 12px;
+	left: 37%;
 	top: -15px;
+	font-size: 15px;
+
 }
 
-button{
-	border: none;	
-}
-
-button:hover{
+button:hover{ 
 	background-color: #A88E45;
-	color: white;
-	opacity: 87%;
-}
+	color:white;
+
+ }
+
+
 p{
 	font-family: 'Helvetica Neue';
 	font-size: 12px;
 	text-transform: capitalize;
 	color: white;
+	margin: 25px;
+
 /*	border: solid #A88E45 0.25px;*/
 }
 /*.Parasite img{
@@ -99,12 +105,12 @@ p{
 	height:300px !important;
 }
 */
-@media screen and (max-width:812px){
+/*@media screen and (max-width:812px){
 img {
 	width: 300px ;
 	height: 350px;
 }
-}
+}*/
 /*@media screen and (min-width:736px){
 
 }*/
