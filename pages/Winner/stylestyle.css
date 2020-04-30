@@ -1,5 +1,5 @@
 body{background-color:#2B2B2B;
-/*overflow: hidden;*/}
+overflow-x: hidden;}
 
 .logo{ 
 	color: #A88E45;
@@ -87,6 +87,7 @@ input {
 button:hover{ 
 	background-color: #A88E45;
 	color:white;
+	transition: 5s ease;
 
  }
 
