@@ -9,7 +9,7 @@ overflow-x: hidden;}
 }
 
 
-/*h1 {
+h1 {
 	color: white;
 	font-family: 'Helvetica Neue', bold;
 	font-size: 23px;
@@ -19,6 +19,7 @@ overflow-x: hidden;}
 	margin-left:5px;
 	margin-right:5px;
 	letter-spacing:2px;
+	margin-top:-248px;
 }
 
 .box {
@@ -28,7 +29,7 @@ overflow-x: hidden;}
 	margin-left: 28px;
 	position:absolute;
 	top:296px
-}*/
+}
 
 
 h2{
@@ -85,21 +86,21 @@ input {
 	opacity: 0.2;
 	position: relative;
 	margin-left: 180px;
-	top: 55px;
+	margin-top: 55px;
 } 
 
 .search-btn {
 	color: #A88E45;
 	position: absolute;
 	top: 70px;
-	left: 168px;
+	left: 165px;
 }
 
 .notefications {
 	color: #A88E45;
 	position: absolute;
 	top: 70px;
-	left: 142px;
+	left: 138px;
 }
 
 
