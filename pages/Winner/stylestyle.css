@@ -52,25 +52,31 @@ h3{
 }
 h4{
 	font-family: 'Helvetica Neue', bold;
-	font-size: 10px;
+	font-size: 17px;
 	text-transform: uppercase;
 	color: white;
 	margin: 25px;
+	letter-spacing: 2px;
+	text-align:center;
 }
-img{ width: 300px ;
-	height: 350px;
+img{ 
+	position:relative;
+	width:300px;
 	margin-left:27px;
 	border-color: #A88E45;
 	border-style: solid;
-	border-width: 1px;
+	border-width: 1.5px;
 }
 
 .opacity{
 	opacity: 25%;
 }
 
-
-
+/*.Banderas {
+	width:300px;
+	height:350px;
+}
+*/
 /*.top-nav {
   display: grid;
   grid-template-columns: 1fr;
@@ -191,8 +197,7 @@ p{
 
 
 
-            
-       
+          
 
 #spinner {
 	
